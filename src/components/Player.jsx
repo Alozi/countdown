@@ -4,11 +4,12 @@ export default function Player() {
   const playerName = useRef('');
   const [enteredPlayerName, setEnteredPlayerName] = useState('');
 
-  console.log(playerName);
-  console.log(enteredPlayerName);
+  // console.log(playerName);
+  // console.log(enteredPlayerName);
 
   function handleClick() {
     setEnteredPlayerName(playerName.current.value);
+    playerName.current.value = '';
   }
 
   return (
